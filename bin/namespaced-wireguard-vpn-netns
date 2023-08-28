@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -euf -o pipefail
+set -x
 
 die() {
     echo "${BASH_SOURCE[1]}: line ${BASH_LINENO[0]}: ${FUNCNAME[1]}: ${1:-Died}" >&2
